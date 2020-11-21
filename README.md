@@ -24,3 +24,8 @@ A quick description of your strapi application
 ## MISC
 - https://strapi.io/documentation/v3.x/guides/registering-a-field-in-admin.html#setup
 
+## Plugin CKEditor
+- https://www.udemy.com/course/react-avancado/learn/lecture/21124004#overview 
+- yarn strapi generate:plugin wysiwyg
+- cd plugins/wysiwyg
+- yarn add @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
