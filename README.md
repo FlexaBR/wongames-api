@@ -22,6 +22,8 @@ A quick description of your strapi application
 
 
 ## MISC
+- yarn develop --watch-admin
+
 - https://strapi.io/documentation/v3.x/guides/registering-a-field-in-admin.html#setup
 
 ## Plugin CKEditor
@@ -29,3 +31,5 @@ A quick description of your strapi application
 - yarn strapi generate:plugin wysiwyg
 - cd plugins/wysiwyg
 - yarn add @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+
