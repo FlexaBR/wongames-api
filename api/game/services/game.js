@@ -76,6 +76,7 @@ async function createManyToManyData(products) {
     publishers[publisher] = true;
   });
 
+  // aula 130
   return Promise.all([
     ...Object.keys(developers).map((name) => create(name, "developer")),
     ...Object.keys(publishers).map((name) => create(name, "publisher")),
@@ -123,7 +124,7 @@ async function createGames(products) {
 
         const game = await strapi.services.game.create({
           name: product.title,
-          slug: product.slug.replace(/_/g, "-"),
+          slug: product.slug.replace(/_/g, "-"), // aula 131
           price: product.price.amount,
           release_date: new Date(
             Number(product.globalReleaseDate) * 1000
