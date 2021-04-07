@@ -1,0 +1,15 @@
+query getProfile {
+  me {
+    id
+    username
+    email
+    role {
+      name
+    }
+    blocked
+  }
+}
+
+{
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzMsImlhdCI6MTYxNzIyODU4MSwiZXhwIjoxNjE5ODIwNTgxfQ.Q4mwn75Ez-opbV_tPC4w52nb0T5fLQ_QNscuxw5QrGw"
+}
