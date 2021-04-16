@@ -1,0 +1,26 @@
+mutation MutationUpdateWishlist($input: updateWishlistInput) {
+  updateWishlist(input: $input) {
+    wishlist {
+      id
+      games {
+        id
+        name
+      }
+    }
+  }
+}
+
+{
+  "input": {
+    "where": {
+      "id": 4
+    },
+    "data": {
+      "games": []
+    }
+  }
+}
+
+{
+  "authorization": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzMsImlhdCI6MTYxODI1MTgxMywiZXhwIjoxNjIwODQzODEzfQ.31AyccsauVhmooldbTmHCCwcar6rQ5oIbWgw9sWBACg"
+}

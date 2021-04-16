@@ -1,0 +1,27 @@
+mutation MutationCreateWishlist($input: createWishlistInput!) {
+  createWishlist(input: $input) {
+    wishlist {
+      id
+      user {
+        id
+        username
+      }
+      games {
+        id
+        name
+      }
+    }
+  }
+}
+
+{
+  "input": {
+    "data": {
+      "games": [230, 273]
+    }
+  }
+}
+
+{
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzMsImlhdCI6MTYxNzIyODU4MSwiZXhwIjoxNjE5ODIwNTgxfQ.Q4mwn75Ez-opbV_tPC4w52nb0T5fLQ_QNscuxw5QrGw"
+}
