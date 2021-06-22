@@ -67,6 +67,7 @@ https://www.datacamp.com/community/tutorials/10-command-line-utilities-postgresq
 - https://www.udemy.com/course/react-avancado/learn/lecture/21124004#overview 
 - yarn strapi generate:plugin wysiwyg
 - cd plugins/wysiwyg
-- yarn add @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+- yarn add @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-cl
 
 
+npm install -g maildev

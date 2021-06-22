@@ -2,7 +2,6 @@
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const { sanitizeEntity } = require("strapi-utils");
-const orderTemplate = require("../../../config/email-templates/order");
 
 module.exports = {
   createPaymentIntent: async (ctx) => {
@@ -106,7 +105,7 @@ module.exports = {
       {
         user: userInfo,
         payment: {
-          total: `$ ${total_in_cents / 100}`,
+          total: `$ ${(total_in_cents / 100).toFixed(2)}`,
           card_brand: entry.card_brand,
           card_last4: entry.card_last4,
         },
